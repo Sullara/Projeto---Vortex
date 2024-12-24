@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VORTEX</title>
+    
+    <!-- ========== Bootstrap Icons ========== -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- ========== CSS ========== -->
+     <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body class="bg dark">
+
+    <header>
+
+        <!-- ========== Navegation Bar ========== -->
+
+        <nav class="navbar">
+            <div class="logo" title="Home">
+                <a href="#home">
+                    <img src="./assets/img/vortex-logo.png" alt="imagem da logo da vórtex">
+                </a>
+            </div>
+
+            <div class="list__container">
+                <ul class="list">
+                    <li class="list__item">
+                        <a class="list__link" href="#pricing__table">Plans</a>
+                    </li>
+                    <li class="list__item">
+                        <a class="list__link" href="#our__partners">Partners</a>
+                    </li>
+                    <li class="list__item">
+                        <a class="list__link" href="#FAQs">FAQs</a>
+                    </li>
+                    <li class="list__item">
+                        <a class="list__link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div onclick="mode()" class="button__container">
+                <button class="mode__button" title="dark/light mode">
+                    <i class="mode__icon bi bi-sun"></i>
+                </button>
+            </div>
+
+            <button onclick="showMenu()" class="mobile__icon" title="menu">
+                <i class="bi bi-list"></i>
+            </button>
+        </nav>
+
+        <div class="mobile__menu">
+            <div class="list__container">
+                <ul class="list">
+                    <li class="list__item">
+                        <a class="list__link" href="#pricing__table">Plans</a>
+                    </li>
+                    <li class="list__item">
+                        <a class="list__link" href="#our__partners">Partners</a>
+                    </li>
+                    <li class="list__item">
+                        <a class="list__link" href="#FAQs">FAQs</a>
+                    </li>
+                    <li class="list__item">
+                        <a class="list__link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div onclick="mode()" class="button__container">
+                <button class="mode__button" title="dark/light mode">
+                    <i class="mode__icon bi bi-sun"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- ========== Home ========== -->
+
+        <section class="home" id="home">
+
+            <video id="home__bg-video" autoplay muted loop>
+                <source id="video-source" src="" type="video/mp4">
+                Seu navegador não suporta a reprodução de vídeo.
+            </video>
+    
+            <div class="home__slogan">
+                <h1 id="slogan">Vortex connects you to the future.</h1>
+            </div>
+        </section>
+    </header>
+   
+    <!-- ========== Pricing Table ========== -->
+    <section class="pricing__table grid" id="pricing__table">
+        <div class="card__container grid">
+
+            <!-- ========== Card 1 ========== -->
+            <article class="card__content grid">
+                <div class="card__pricing">
+                    <div class="card__pricing-number">
+                        <span class="card__pricing-symbol">R$</span>65
+                    </div>
+
+                    <span class="card__pricing-month">/month</span>
+                </div>
+
+                <header class="card__header">
+                    <div class="card__header-circle grid">
+                        <i class="bi bi-star card__header-icon"></i>
+                    </div>
+
+                    <span class="card__header-subtitle">
+                        basic
+                    </span>
+
+                    <h1 class="card__header-title">
+                        500 Mega
+                    </h1>
+                </header>
+
+                <ul class="card__list grid">
+                    <li class="card__list-item">
+                        <i class="bi bi-check-lg card__list-icon"></i>
+                        <p class="card__list-description">Lorem ipsum dolor sit amet</p>
+                    </li>
+
+                    <li class="card__list-item">
+                        <i class="bi bi-check-lg card__list-icon"></i>
+                        <p class="card__list-description">Lorem ipsum dolor sit amet</p>
+                    </li>
+
+                    <li class="card__list-item">
+                        <i class="bi bi-check-lg card__list-icon"></i>
+                        <p class="card__list-description">Lorem ipsum dolor sit amet</p>
+                    </li>
+
+                    <li class="card__list-item">
+                        <i class="bi bi-x card__list-icon"></i>
+                        <p class="card__list-description">Lorem ipsum dolor sit amet</p>
+                    </li>
+
+                    <li class="card__list-item">
+                        <i class="bi bi-x card__list-icon"></i>
+                        <p class="card__list-description">Lorem ipsum dolor sit amet</p>
+                    </li>
+                </ul>
+                <button class="card__button">Choose This Plan</button>
+            </article>
+
+            <!-- ========== Card 2 ========== -->
+
+            <article class="card__content grid">
+                <div class="card__pricing">
+                    <div class="card__pricing-number">
+                        <span class="card__pricing-symbol">R$</span>120
+                    </div>
+
+                    <span class="card__pricing-month">/month</span>
+                </div>
+
+                <header class="card__header">
+                    <div class="card__header-circle grid">
+                        <i class="bi bi-star-half card__header-icon"></i>
+                    </div>
+
+                    <span class="card__header-subtitle">
+                        Most popular
+                    </span>
+
+                    <h1 class="card__header-title">
+                        600 Mega
+                    </h1>
+                </header>
+
+                <ul class="card__list grid">
+                    <li class="card__list-item">
+                        <i class="bi bi-check-lg card__list-icon"></i>
+                        <p class="card__list-description">Lorem ipsum dolor sit amet</p>
+                    </li>
+
+                    <li class="card__list-item">
+                        <i class="bi bi-check-lg card__list-icon"></i>
+                        <p class="card__list-description">Lorem ipsum dolor sit amet</p>
+                    </li>
+
+                    <li class="card__list-item">
+                        <i class="bi bi-check-lg card__list-icon"></i>
+                        <p class="card__list-description">Lorem ipsum dolor sit amet</p>
+                    </li>
+
+                    <li class="card__list-item">
+                        <i class="bi bi-check-lg card__list-icon"></i>
+                        <p class="card__list-description">Lorem ipsum dolor sit amet</p>
+                    </li>
+
+                    <li class="card__list-item">
+                        <i class="bi bi-x card__list-icon"></i>
+                        <p class="card__list-description">Lorem ipsum dolor sit amet</p>
+                    </li>
+                </ul>
+                <button class="card__button">Choose This Plan</button>
+            </article>
+
+            <!-- ========== Card 3 ========== -->
+            <article class="card__content grid">
+                <div class="card__pricing">
+                    <div class="card__pricing-number">
+                        <span class="card__pricing-symbol">R$</span>155
+                    </div>
+
+                    <span class="card__pricing-month">/month</span>
+                </div>
+
+                <header class="card__header">
+                    <div class="card__header-circle grid">
+                        <i class="bi bi-star-fill card__header-icon"></i>
+                    </div>
+
+                    <span class="card__header-subtitle">
+                        free modem
+                    </span>
+
+                    <h1 class="card__header-title">
+                        1 Giga
+                    </h1>
+                </header>
+
+                <ul class="card__list grid">
+                    <li class="card__list-item">
+                        <i class="bi bi-check-lg card__list-icon"></i>
+                        <p class="card__list-description">Lorem ipsum dolor sit amet</p>
+                    </li>
+
+                    <li class="card__list-item">
+                        <i class="bi bi-check-lg card__list-icon"></i>
+                        <p class="card__list-description">Lorem ipsum dolor sit amet</p>
+                    </li>
+
+                    <li class="card__list-item">
+                        <i class="bi bi-check-lg card__list-icon"></i>
+                        <p class="card__list-description">Lorem ipsum dolor sit amet</p>
+                    </li>
+
+                    <li class="card__list-item">
+                        <i class="bi bi-check-lg card__list-icon"></i>
+                        <p class="card__list-description">Lorem ipsum dolor sit amet</p>
+                    </li>
+
+                    <li class="card__list-item">
+                        <i class="bi bi-check-lg card__list-icon"></i>
+                        <p class="card__list-description">Lorem ipsum dolor sit amet</p>
+                    </li>
+                </ul>
+                <button class="card__button">Choose This Plan</button>
+            </article>
+        </div>
+    </section>
+
+    <!-- ========== Our partners/clients ========== -->
+    <section class="our__partners" id="our__partners">
+        <div class="logos__container">
+            <div class="logos__slider">
+                <img src="./assets/img/greenbite.png" alt="greenbite logo">
+                <img src="./assets/img/digibloc.png" alt="digibloc logo">
+                <img src="./assets/img/infinite.png" alt="infinite logo">
+                <img src="./assets/img/grid.png" alt="grid logo">
+                <img src="./assets/img/otieno.png" alt="otieno logo">
+                <img src="./assets/img/fradel-sweets.png" alt="fradel sweets logo">
+                <img src="./assets/img/techno.png" alt="techno logo">
+                <img src="./assets/img/casa-do-pet.png" alt="casa do pet logo">
+                <img src="./assets/img/wardiere.png" alt="wardiere logo">
+                <img src="./assets/img/bright-ideas.png" alt="bright ideas logo">
+            </div>
+
+            <div class="logos__slider">
+                <img src="./assets/img/greenbite.png" alt="greenbite logo">
+                <img src="./assets/img/digibloc.png" alt="digibloc logo">
+                <img src="./assets/img/infinite.png" alt="infinite logo">
+                <img src="./assets/img/grid.png" alt="grid logo">
+                <img src="./assets/img/otieno.png" alt="otieno logo">
+                <img src="./assets/img/fradel-sweets.png" alt="fradel sweets logo">
+                <img src="./assets/img/techno.png" alt="techno logo">
+                <img src="./assets/img/casa-do-pet.png" alt="casa do pet logo">
+                <img src="./assets/img/wardiere.png" alt="wardiere logo">
+                <img src="./assets/img/bright-ideas.png" alt="bright ideas logo">
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== FAQs ========== -->
+    <section class="FAQs" id="FAQs">
+
+        <div class="accordion">
+            <div class="accordion__item">
+                <div class="question__container">
+                    <span class="question">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit?
+                    </span>
+
+                    <i class="bi bi-chevron-down arrow"></i>
+                </div>
+
+                <div class="answer__container">
+                    <p class="answer">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                        exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                        in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
+                        sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+                        laborum.</p>
+                </div>
+            </div>
+
+            <div class="accordion__item">
+                <div class="question__container">
+                    <span class="question">
+                        Lorem ipsum dolor sit?
+                    </span>
+
+                    <i class="bi bi-chevron-down arrow"></i>
+                </div>
+
+                <div class="answer__container">
+                    <p class="answer">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                        exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                        in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
+                        sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+                        laborum.</p>
+                </div>
+            </div>
+
+            <div class="accordion__item">
+                <div class="question__container">
+                    <span class="question">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit?
+                    </span>
+
+                    <i class="bi bi-chevron-down arrow"></i>
+                </div>
+
+                <div class="answer__container">
+                    <p class="answer">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                        exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                        in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
+                        sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+                        laborum.</p>
+                </div>
+            </div>
+
+            <div class="accordion__item">
+                <div class="question__container">
+                    <span class="question">
+                        Lorem ipsum dolor sitt?
+                    </span>
+                    
+                    <i class="bi bi-chevron-down arrow"></i>
+                </div>
+
+                <div class="answer__container">
+                    <p class="answer">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                        exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                        in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
+                        sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+                        laborum.</p>
+                </div>
+            </div>
+
+            <div class="accordion__item">
+                <div class="question__container">
+                    <span class="question">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit?
+                    </span>
+                    
+                    <i class="bi bi-chevron-down arrow"></i>
+                </div>
+
+                <div class="answer__container">
+                    <p class="answer">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                        exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                        in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
+                        sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+                        laborum.</p>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- ========== Contact Form ========== -->
+    <section class="contact" id="contact">
+
+        <div class="contact__header">
+            <h2 class="section__title">Contact Us</h2>
+
+            <p class="contact__text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel beatae, quo placeat at cupiditate consequuntur, alias quas nesciunt natus eaque sapiente aperiam? Quos accusamus, aut suscipit enim aliquam quod magni.</p>
+        </div>
+        
+        <div class="contact__body">
+            <div class="info__container">
+                <div class="info__item">
+                    <div class="contact__icon">
+                        <i class="bi bi-geo-alt-fill"></i>
+                    </div>
+                    
+                    <div class="contact__box">
+                        <h3 class="contact__box-subtitle">Address</h3>
+                        <p class="contact__box-text">4671 Sugar Camp Road,<br>
+                        Owatonna, Minesota,<br>
+                        55060</p>
+                    </div>
+                </div>
+    
+                <div class="info__item">
+                    <div class="contact__icon">
+                        <i class="bi bi-telephone-fill"></i>
+                    </div>
+    
+                    <div class="contact__box">
+                        <h3 class="contact__box-subtitle">Telephone</h3>
+                        <p class="contact__box-text">(00) 1234-5678</p>
+                    </div>
+                </div>
+    
+                <div class="info__item">
+                    <div class="contact__icon">
+                        <i class="bi bi-envelope-fill"></i>
+                    </div>
+                    
+                    <div class="contact__box">
+                        <h3 class="contact__box-subtitle">Email</h3>
+                        <p class="contact__box-text">Example@outlook.com</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form__container">
+                <form action="">
+                    <h2 class="form__title">Send Message</h2>
+
+                    <div class="input__box">
+                        <input type="text" name="name" autocomplete="name" required>
+                        <span class="input__text">Full Name</span>
+                    </div>
+
+                    <div class="input__box">
+                        <input type="text" name="email" autocomplete="email" required>
+                        <span class="input__text">Email</span>
+                    </div>
+
+                    <div class="input__box">
+                        <textarea type="text" name="text" required></textarea>
+                        <span class="input__text">Type your message...</span>
+                    </div>
+
+                    <div class="input__box">
+                         <button class="form__btn" type="submit">Send</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== Footer ========== -->
+
+    <footer>
+        <div class="footer__content">
+            <div class="footer__contacts">
+                <div class="footer__info">
+                    <img src="./assets/img/vortex-logo.png" alt="foto da logo da vortex">
+                    <h3 class="footer__text">VORTEX</h3>
+                </div>
+
+                <div class="footer__socials">
+                    <a class="socials__link" id="instagram" href="#">
+                        <i class="bi bi-instagram"></i>
+                    </a>
+                    <a class="socials__link" id="twitter" href="#">
+                        <i class="bi bi-twitter-x"></i>
+                    </a>
+                    <a class="socials__link" id="tiktok" href="#">
+                        <i class="bi bi-tiktok"></i>
+                    </a>
+                    <a class="socials__link" id="youtube" href="#">
+                        <i class="bi bi-youtube"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="footer__body grid">
+                <ul class="footer__list">
+                    <li>
+                        <h3 class="footer__text">Blog</h3>
+                    </li>
+                    <li>
+                        <a class="footer__link" href="#">lorem ipsum</a>
+                    </li>
+                    <li>
+                        <a class="footer__link" href="#">lorem ipsum</a>
+                    </li>
+                    <li>
+                        <a class="footer__link" href="#">lorem ipsum</a>
+                    </li>
+                </ul>
+    
+                <ul class="footer__list">
+                    <li>
+                        <h3 class="footer__text">Company</h3>
+                    </li>
+                    <li>
+                        <a class="footer__link" href="#">lorem ipsum</a>
+                    </li>
+                    <li>
+                        <a class="footer__link" href="#">lorem ipsum</a>
+                    </li>
+                    <li>
+                        <a class="footer__link" href="#">lorem ipsum</a>
+                    </li>
+                </ul>
+
+                <ul class="footer__list">
+                    <li>
+                        <h3 class="footer__text">Support</h3>
+                    </li>
+                    <li>
+                        <a class="footer__link" href="#">lorem ipsum</a>
+                    </li>
+                    <li>
+                        <a class="footer__link" href="#">lorem ipsum</a>
+                    </li>
+                    <li>
+                        <a class="footer__link" href="#">lorem ipsum</a>
+                    </li>
+                </ul>
+    
+                <div class="footer__news-letter">
+                    <h3 class="footer__text">Subscribe</h3>
+    
+                    <p class="footer__text">Enter you email to subscribe to our news letter</p>
+    
+                    <div class="subscribe__container">
+                        <input class="subscribe__input" name="email" autocomplete="email" type="email" required>
+                        <button class="subscribe__btn" type="submit" title="Send"><i class="bi bi-envelope"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer__copyright">
+            &#169
+            2024 all rights reserved
+        </div>
+    </footer>
+
+    <!-- ========== JS ========== -->
+    <script src="./assets/js/script.js"></script>
+</body>
+
+</html>
